@@ -1,0 +1,104 @@
+<!DOCTYPE html><html lang="fa" dir="rtl"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>بینوکس — نمونه‌کارها و خدمات نرم‌افزار</title>
+<meta name="description" content="بینوکس: طراحی وب‌سایت، اپ موبایل، ربات تلگرام و سامانه‌های سازمانی (CRM و ERP). مشاهده نمونه‌کارها.">
+<style>
+:root{--paper:#f7f4ec;--card:#fffdf8;--ink:#1c2024;--muted:#5c6470;--line:#e5ddcc;
+--accent:#0d6e5d;--accent-soft:#e2f1ec;--dark:#14201d;--radius:18px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Vazirmatn","IRANSans","IRANSansX",Tahoma,Arial,sans-serif;
+background:var(--paper);color:var(--ink);line-height:2}
+.wrap{max-width:1060px;margin:0 auto;padding:0 20px}
+header.site{position:sticky;top:0;z-index:10;background:rgba(247,244,236,.94);
+backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:12px;padding-bottom:12px}
+.brand{font-weight:800;font-size:22px;letter-spacing:0}
+.brand small{display:block;font-size:12px;font-weight:400;color:var(--muted);line-height:1.6}
+nav.links{display:flex;gap:20px;font-size:14px}
+nav.links a{color:var(--muted);text-decoration:none}
+nav.links a:hover{color:var(--ink)}
+.btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;
+padding:10px 26px;border-radius:999px;font-weight:700;font-size:15px}
+.btn:hover{filter:brightness(1.08)}
+.btn.ghost{background:transparent;color:var(--accent);border:2px solid var(--accent)}
+.hero{padding:72px 0 40px;text-align:center}
+.hero .kicker{display:inline-block;background:var(--accent-soft);color:var(--accent);
+font-size:13px;font-weight:700;padding:4px 16px;border-radius:999px;margin-bottom:18px}
+.hero h1{font-size:clamp(30px,6vw,54px);line-height:1.7;font-weight:900}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero p.sub{color:var(--muted);font-size:17px;max-width:640px;margin:14px auto 0}
+.hero .cta{display:flex;gap:12px;justify-content:center;margin-top:26px;flex-wrap:wrap}
+.domains{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:30px}
+.domains span{border:1px solid var(--line);background:var(--card);border-radius:999px;
+padding:4px 16px;font-size:13px;color:var(--muted)}
+section.block{padding:44px 0}
+.sec-title{font-size:24px;font-weight:900;margin-bottom:6px}
+.sec-sub{color:var(--muted);font-size:15px;margin-bottom:24px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+.card h3{font-size:17px;margin-bottom:6px}
+.card p{font-size:14px;color:var(--muted);line-height:2}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.tags span{background:var(--accent-soft);color:var(--accent);font-size:12px;font-weight:700;
+padding:2px 12px;border-radius:999px}
+ul.ticks{list-style:none;margin-top:10px}
+ul.ticks li{font-size:13px;color:var(--muted)}
+ul.ticks li::before{content:"✓ ";color:var(--accent);font-weight:800}
+.work{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.proj{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+overflow:hidden;display:flex;flex-direction:column}
+.proj .art{background:var(--dark);padding:26px;display:flex;justify-content:center}
+.proj .art svg{width:150px;height:90px;stroke:#7fd6bd;fill:none;stroke-width:4;
+stroke-linecap:round;stroke-linejoin:round}
+.proj .art svg path,.proj .art svg circle,.proj .art svg rect,.proj .art svg line{stroke:#7fd6bd;fill:none}
+.proj .body{padding:20px 22px;display:flex;flex-direction:column;gap:8px;flex:1}
+.proj .top{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.proj .top .badge{font-size:11px;background:var(--accent-soft);color:var(--accent);
+font-weight:700;padding:2px 12px;border-radius:999px;white-space:nowrap}
+.proj h3{font-size:19px}
+.proj h3 small{display:block;font-size:13px;color:var(--muted);font-weight:400}
+.proj dl{display:grid;gap:6px;font-size:13.5px}
+.proj dt{font-weight:800}
+.proj dd{color:var(--muted)}
+.proj .status{margin-top:auto;padding-top:10px;font-size:13px;font-weight:700;color:var(--accent)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.stack{display:flex;gap:10px;flex-wrap:wrap}
+.stack span{background:var(--dark);color:#e8f3ee;font-size:13px;padding:6px 18px;border-radius:999px}
+.cta-box{background:var(--dark);color:#f2f7f4;border-radius:24px;padding:48px 32px;text-align:center}
+.cta-box h2{font-size:26px;margin-bottom:8px}
+.cta-box p{color:#b9c9c2;font-size:15px;margin-bottom:22px}
+.cta-box .row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.cta-box a.mail{color:#fff;font-size:17px;font-weight:700;direction:ltr;display:block;margin-top:14px}
+footer.site{padding:28px 0 40px;color:var(--muted);font-size:13px;text-align:center}
+footer.site a{color:var(--accent)}
+@media(max-width:760px){.grid2,.grid4,.work,.steps{grid-template-columns:1fr}
+nav.links{display:none}.hero{padding:52px 0 28px}}
+</style></head><body>
+<header class="site"><div class="wrap"><div class="brand">بینوکس<small>binux.tech — توسعه نرم‌افزار</small></div><nav class="links"><a href="#services">خدمات</a><a href="#work">نمونه‌کارها</a><a href="#method">روش کار</a><a href="#contact">تماس</a></nav><a class="btn" href="#contact">شروع گفت‌وگو</a></div></header>
+<div class="wrap"><div class="hero"><span class="kicker">تهران — سفارش از سراسر کشور</span><h1>نرم‌افزاری که <em>کسب‌وکار شما</em> را جلو می‌برد</h1><p class="sub">وب‌سایت، اپ موبایل، ربات تلگرام و سامانه‌های سازمانی — از ایده تا تحویل و پشتیبانی، همراه شما هستیم.</p><div class="cta"><a class="btn" href="#work">مشاهده نمونه‌کارها</a><a class="btn ghost" href="#contact">درخواست مشاوره</a></div><div class="domains"><span>سامانه سازمانی (ERP)</span><span>CRM املاک</span><span>بازی موبایلی</span><span>ربات تلگرام</span><span>فروش خودکار</span></div></div>
+<section class="block" id="services"><h2 class="sec-title">خدمات</h2><p class="sec-sub">چهار خط کاری — هر پروژه محدوده مشخص و تحویل مشخص دارد.</p><div class="grid4">
+<div class="card"><h3>وب‌سایت و سامانه‌های وب</h3><p>فروشگاهی، شرکتی و پنل مدیریتی — از صفحه معرفی تا داشبوردهای عملیاتی.</p><ul class="ticks"><li>فروشگاه اینترنتی</li><li>سایت شرکتی</li><li>پنل مدیریتی</li></ul></div>
+<div class="card"><h3>اپلیکیشن موبایل</h3><p>اندروید و iOS — از بازی و سرگرمی تا اپ‌های متصل به سامانه سازمانی.</p><ul class="ticks"><li>Android</li><li>iOS</li><li>نسخه وب‌همراه</li></ul></div>
+<div class="card"><h3>بات و اتوماسیون</h3><p>ربات تلگرام، خزنده وب و پردازش داده — کارهای تکراری را به سیستم بسپارید.</p><ul class="ticks"><li>ربات تلگرام</li><li>فروش خودکار</li><li>پردازش داده</li></ul></div>
+<div class="card"><h3>سامانه‌های سازمانی</h3><p>CRM، DMS و ERP — فرایندهای پراکنده را در یک فضای کاری مشترک می‌آوریم.</p><ul class="ticks"><li>CRM</li><li>ERP</li><li>اتوماسیون فرایند</li></ul></div>
+</div></section>
+<section class="block" id="work"><h2 class="sec-title">نمونه‌کارها</h2><p class="sec-sub">کاری که واقعاً تحویل داده‌ایم — بدون نام مشتری، بدون اغراق.</p><div class="work">
+<article class="proj"><div class="art"><svg viewBox="0 0 200 120" aria-hidden="true"><rect x="14" y="14" width="80" height="46" rx="8"/><rect x="106" y="14" width="80" height="46" rx="8"/><rect x="14" y="70" width="172" height="36" rx="8"/><line x1="94" y1="37" x2="106" y2="37"/><line x1="100" y1="60" x2="100" y2="70"/></svg></div><div class="body"><div class="top"><span class="badge">پروژه بینوکس</span></div><h3>Meshcat ERP<small>سامانه یکپارچه سازمانی</small></h3><dl><div><dt>نیاز</dt><dd>فرایندهای جدا از هم — فروش، قراردادها و مالی — در یک فضای کاری مشترک.</dd></div><div><dt>آنچه ساخته شد</dt><dd>ماژول‌های متصل، فرم قرارداد، داشبورد قابل‌چیدمان و رابط کاملاً فارسی و راست‌چین.</dd></div></dl><div class="tags"><span>Django و REST API</span><span>React و TypeScript</span></div><div class="status">● در حال توسعه و استقرار</div></div></article>
+<article class="proj"><div class="art"><svg viewBox="0 0 200 120" aria-hidden="true"><circle cx="74" cy="52" r="26"/><path d="M40 106c4-22 18-32 34-32s30 10 34 32"/><path d="M126 34l44 18-44 18z"/><circle cx="152" cy="86" r="16"/></svg></div><div class="body"><div class="top"><span class="badge">محصول بینوکس</span></div><h3>کمک‌مشاور<small>CRM ویژه تیم‌های املاک</small></h3><dl><div><dt>نیاز</dt><dd>مشاوران املاک مشتری‌ها، ملک‌ها و پیگیری‌ها را در ابزارهای جدا گم می‌کردند.</dd></div><div><dt>آنچه ساخته شد</dt><dd>مشتریان، آگهی‌ها و مشاوران در یک CRM با جست‌وجوی نقشه‌ای و داشبورد مدیریتی.</dd></div></dl><div class="tags"><span>Django و React</span><span>PostgreSQL</span><span>نقشه</span></div><div class="status">● محصول بینوکس</div></div></article>
+<article class="proj"><div class="art"><svg viewBox="0 0 200 120" aria-hidden="true"><rect x="46" y="26" width="108" height="68" rx="14"/><circle cx="82" cy="60" r="10"/><rect x="108" y="52" width="22" height="8" rx="4"/><rect x="115" y="45" width="8" height="22" rx="4"/></svg></div><div class="body"><div class="top"><span class="badge">سفارش مشتری</span></div><h3>دابرنا<small>بازی رومیزی + اپ موبایل</small></h3><dl><div><dt>نیاز</dt><dd>یک بازی رومیزی که روی موبایل هم قابل بازی باشد.</dd></div><div><dt>آنچه ساخته شد</dt><dd>منطق بازی به‌همراه اپ موبایل همراه — یک پروژه، دو خروجی.</dd></div></dl><div class="tags"><span>اپ موبایل</span><span>بازی</span></div><div class="status">● تحویل‌شده</div></div></article>
+<article class="proj"><div class="art"><svg viewBox="0 0 200 120" aria-hidden="true"><circle cx="100" cy="60" r="38"/><path d="M90 42l28 18-28 18z"/></svg></div><div class="body"><div class="top"><span class="badge">سفارش مشتری</span></div><h3>میستری‌پلی<small>اپ بازی تعاملی</small></h3><dl><div><dt>نیاز</dt><dd>ایده یک بازی تعاملی که باید سریع به نسخه قابل انتشار می‌رسید.</dd></div><div><dt>آنچه ساخته شد</dt><dd>طراحی و پیاده‌سازی کامل اپ در سه هفته و تحویل آماده انتشار.</dd></div></dl><div class="tags"><span>اپ موبایل</span><span>بازی</span></div><div class="status">● تحویل در سه هفته</div></div></article>
+<article class="proj"><div class="art"><svg viewBox="0 0 200 120" aria-hidden="true"><rect x="66" y="30" width="68" height="56" rx="12"/><circle cx="88" cy="54" r="6"/><circle cx="112" cy="54" r="6"/><line x1="100" y1="30" x2="100" y2="16"/><circle cx="100" cy="14" r="4"/><rect x="86" y="70" width="28" height="6" rx="3"/></svg></div><div class="body"><div class="top"><span class="badge">سفارش مشتری</span></div><h3>ایردراپ‌بات<small>ربات تلگرام کمپین ایردراپ</small></h3><dl><div><dt>نیاز</dt><dd>اجرای کمپین ایردراپ با تعامل خودکار و بدون خطای دستی.</dd></div><div><dt>آنچه ساخته شد</dt><dd>ربات تلگرام برای مدیریت شرکت‌کنندگان و اجرای خودکار کمپین.</dd></div></dl><div class="tags"><span>Python</span><span>Telegram Bot API</span></div><div class="status">● تحویل‌شده</div></div></article>
+<article class="proj"><div class="art"><svg viewBox="0 0 200 120" aria-hidden="true"><path d="M40 34h22l14 40h52l14-28H70"/><circle cx="88" cy="92" r="8"/><circle cx="128" cy="92" r="8"/></svg></div><div class="body"><div class="top"><span class="badge">سفارش مشتری</span></div><h3>بات فروش خودکار<small>سفارش، پرداخت و تحویل خودکار</small></h3><dl><div><dt>نیاز</dt><dd>فروش خدمات دیجیتال که شبانه‌روز بدون دخالت دست انجام شود.</dd></div><div><dt>آنچه ساخته شد</dt><dd>ربات فروش با سفارش و تحویل خودکار، به‌همراه پنل مدیریت.</dd></div></dl><div class="tags"><span>Python</span><span>Telegram Bot API</span><span>پنل مدیریت</span></div><div class="status">● تحویل‌شده</div></div></article>
+</div></section>
+<section class="block" id="method"><h2 class="sec-title">روش کار</h2><p class="sec-sub">از روز اول می‌دانید چه چیزی، کی آماده می‌شود.</p><div class="steps">
+<div class="card"><h3>۱. تحلیل و برآورد</h3><p>مسئله را می‌فهمیم، محدوده کار را مشخص می‌کنیم و برآورد شفاف می‌دهیم.</p></div>
+<div class="card"><h3>۲. نقشه راه مشخص</h3><p>کار به قدم‌های کوچک و قابل تحویل تقسیم می‌شود؛ می‌دانید چه چیزی، کی آماده است.</p></div>
+<div class="card"><h3>۳. توسعه مرحله‌ای</h3><p>نسخه‌های قابل دیدن در طول مسیر؛ بازخورد شما وارد کار می‌شود، نه بعد از تحویل.</p></div>
+<div class="card"><h3>۴. تحویل و پشتیبانی</h3><p>تحویل کامل با آموزش؛ پس از یک دوره پشتیبانی رایگان، پشتیبانی ماهانه ادامه دارد.</p></div>
+</div></section>
+<section class="block"><h2 class="sec-title">توان فنی</h2><p class="sec-sub">ابزاری که هر روز با آن کار می‌کنیم — از وب تا سیستم‌های عمیق.</p><div class="stack"><span>Python</span><span>Django</span><span>REST API</span><span>React</span><span>TypeScript</span><span>PostgreSQL</span><span>Expo / Mobile</span><span>Telegram Bot API</span><span>Go</span><span>Docker و استقرار</span></div><p class="sec-sub" style="margin-top:16px">آزمایش‌های مهندسی ما (سرور HTTP چندنخی در Go، استریم صوت در Rust و ابزارهای متن‌باز) در گیت‌هاب منتشر شده است: <a href="https://github.com/Ali4mini" style="color:var(--accent);direction:ltr">github.com/Ali4mini</a> و <a href="https://github.com/Amirali2agh" style="color:var(--accent);direction:ltr">github.com/Amirali2agh</a>.</p></section>
+<section class="block" id="contact"><div class="cta-box"><h2>پروژه‌تان را بگویید، برآورد شفاف می‌گیرید</h2><p>توضیح کوتاه از کاری که می‌خواهید بفرستید؛ محدوده و برآورد را مشخص برمی‌گردانیم.</p><div class="row"><a class="btn" href="mailto:alireza.4mini@gmail.com">ارسال ایمیل</a><a class="btn ghost" style="color:#fff;border-color:#fff" href="https://binux.tech/">مشاهده binux.tech</a></div><a class="mail" href="mailto:alireza.4mini@gmail.com">alireza.4mini@gmail.com</a></div></section></div>
+<footer class="site"><div class="wrap">بینوکس — تهران · <a href="https://binux.tech/">binux.tech</a></div></footer>
+</body></html>
